@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <h1>William Cox
+            <div>Web Developer</div>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="home"></div>
+    <div id="portrait">
+        <img src="images/self.jpg" alt="photo of page author">
+        <div>
+            <h2 id="about">About Me</h2>
+            <p>After twenty years working in and managing a pizza restaurant I decided to shift gears. I changed my passion
+              for technology into a career as a developer. As a student at <a href="https://www.thinkful.com/">Thinkful</a> I
+              have been introduced to a wider community of coders. I finally feel like I'm home. I look forward to
+              collaborating with my peers to create some fantastic web apps.</p>
+            <p>Aside from coding I enjoy all things Science Fiction and Fantasy, from Star Trek to Dungeons & Dragons. I am
+              sure my love of coding will soon intersect my hobbies and lead to some fun projects.</p>
+          </div>
+    </div>
+    <div id="contact">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/mwkrywjo" method="post">
+            <!-- add the HTML input elements here -->
+           <div id="name">
+            <label for="user-name">Name:</label>
+            <input autofocus="on" id="user-name" type="text" name="name" required/>
+           </div>
+           <div id="email"> 
+            <label for="user-email">Email:</label>
+            <input id="user-email" type="email" name="email" required/>
+           </div>
+           <div>
+            <label for="message">Message</label>
+            <input id="message" type="text" name="message" required maxlength="200"/>
+           </div>
+           <div id="buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>     
+           </div>   
+        </form>
+    </div>
+    <div>
+        <footer>
+            <h3>&copy; William Cox</h3>
+        </footer>
+    </div>
+</body>
+</html>

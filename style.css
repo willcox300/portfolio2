@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: lightgray;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+}
+
+header h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 20px;
+}
+
+header div {
+    font-size: 20px;
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: larger;
+    text-decoration: none;
+    margin: 0 20px 0 0;
+    color: #000
+}
+
+#portrait {
+    background-color: gray;
+    padding: 250px 0 50px 0;
+    margin: 0;
+}
+
+#portrait img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    border-radius: 10px;
+}
+
+#portrait div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 15%;
+}
+
+#portrait div h2 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 20px;
+}
+#portrait div p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: 400;
+    line-height: 1.5em;   
+}
+#contact {
+    background-color: #565555;
+    margin: 0;
+    padding-bottom: 50px;
+
+}
+#contact h2 {
+    margin: 0;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#contact form{
+    padding: 0 15% 30px 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+}
+
+#contact form input, textarea {
+    width: 100%;
+    padding: 8px;
+}
+#contact form div {
+    padding: 10px 0;
+}
+#message {
+    height: 5rem;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #2a2a2a;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media all and (min-width: 600px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    header h1 {
+        padding-left: 5%;
+        margin-top: -5px;
+    }
+    header nav {
+        padding-top: 20px;
+    }
+    #portrait {
+        padding-top: 150px;
+    }
+    #portrait img {
+        width: 40%;
+    }   
+}
